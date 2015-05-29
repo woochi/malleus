@@ -1,0 +1,55 @@
+.card
+  position: relative
+  background: rgba($black, 0.2)
+  border-radius: $global-radius * 3
+
+  &.fade-enter
+    position: absolute
+
+.card-name
+  +font-size(18px)
+  text-align: center
+  padding: rhythm(0.5) 0
+
+.card-stats
+  display: flex
+  flex-flow: row wrap
+  justify-content: stretch
+
+.card-stat
+  flex: 1 0 auto
+  align-self: stretch
+  text-align: center
+
+.card-stat-name
+  +font-size(10px)
+  text-transform: uppercase
+  letter-spacing: 1px
+
+.card-overlay
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  padding: rhythm(1)
+  background: rgba($black, 0.8)
+
+.card-armours
+  display: flex
+
+.card-soak
+  position: relative
+  width: rhythm(2)
+  padding: rhythm(0.5)
+  border: 1px solid $gold5
+  text-align: center
+
+.card-armour-value
+  +font-size(10px, 0.5)
+  position: absolute
+  top: 0
+  left: 0
+  width: rhythm(0.5)
+  border: 1px solid $gold5
+  border-width: 0 1px 1px

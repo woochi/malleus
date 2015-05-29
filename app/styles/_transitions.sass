@@ -1,0 +1,17 @@
+%transition-fade
+  transition: opacity 0.4s
+  will-change: opacity
+
+.fade-enter
+  @extend %transition-fade
+  opacity: 0
+
+.fade-enter-active
+  opacity: 1
+
+.fade-leave
+  @extend %transition-fade
+  opacity: 1
+
+.fade-leave-active
+  opacity: 0

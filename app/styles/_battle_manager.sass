@@ -1,0 +1,55 @@
+.bm
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: row
+
+.bm-wrap
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.bm-sidebar
+  width: 20%
+  min-width: rhythm(8)
+  background: rgba($black, 0.2)
+
+.bm-header
+  @extend .wizard-header
+  flex: 0 0 auto
+  text-align: center
+
+.bm-header-left
+  position: absolute
+  left: 0
+  padding-left: rhythm(1)
+
+.bm-header-right
+  position: absolute
+  right: 0
+  padding-right: rhythm(1)
+
+.bm-content
+  overflow-y: auto
+  display: flex
+  flex-flow: row nowrap
+  flex: 1 1 auto
+  justify-content: space-around
+  position: relative
+  padding: rhythm(1) 0
+
+.bm-panel
+  display: flex
+  flex-direction: column
+  justify-content: center
+  flex: 1 0 20%
+  padding: 0 rhythm(1)
+
+.bm-panel-full
+  flex: 1 0 30%
+  padding: 0 rhythm(2)
+
+.bm-footer
+  @extend .wizard-footer
+  flex: 0 0 auto

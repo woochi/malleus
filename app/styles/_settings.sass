@@ -1,0 +1,95 @@
+// Colors
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$white: #FFF
+$black: #000
+
+$gold5: #b1a475
+$gold6: #978C64
+$gold7: #71694B
+
+$navy5: #27282e
+
+$teal5: #869999
+
+$sand5: #89735B
+
+$green5: #83A241
+
+$red5: #893829
+
+$yellow5: yellow
+
+// Element colors
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$body-background: #202123
+
+$global-radius: 2px
+
+// Typography
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$font-weight-normal: 400
+$font-weight-bold: 500
+
+$base-font-size: 14px
+$base-line-height: 26px
+$base-font-weight: $font-weight-normal
+$base-font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif
+$base-color: $gold5
+
+$heading-font-weight: $font-weight-normal
+$h1-font-size: 44px
+$h2-font-size: 33px
+$h3-font-size: 25px
+$h4-font-size: 19px
+$h5-font-size: 14px
+
+$link-color: $gold5
+$link-color-hover: $gold6
+$link-color-active: $gold7
+
+// Easings
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1)
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1)
+
+// Media Query Ranges
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$small-range: (0em, 40em)
+$medium-range: (40.063em, 64em)
+$large-range: (64.063em, 90em)
+$xlarge-range: (90.063em, 120em)
+$xxlarge-range: (120.063em, 99999999em)
+
+$screen: "only screen"
+
+$landscape: "#{$screen} and (orientation: landscape)"
+$portrait: "#{$screen} and (orientation: portrait)"
+
+$small-up: $screen
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})"
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})"
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})"
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})"
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})"
+
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})"
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})"
+
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})"
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})"
+
+// Z-indices
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$zindex-footer: 10
+$zindex-drawer: 20
+$zindex-content: 30
+$zindex-dropdown: 90
+$zindex-tooltip: 100

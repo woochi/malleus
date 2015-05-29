@@ -1,0 +1,71 @@
+%default-font
+  font: normal $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family
+  color: $base-color
+  -webkit-font-smoothing: antialiased
+
+%default-margin
+  margin: 0 0 rhythm(1)
+
+body, html
+  @extend %default-font
+  overflow: hidden
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  background: $body-background
+
+%heading
+  @extend %default-margin
+  font-weight: $heading-font-weight
+
+h1
+  @extend %heading
+
+h2
+  @extend %heading
+
+h3
+  @extend %heading
+
+h4
+  @extend %heading
+
+h5
+  @extend %heading
+
+a
+  +user-select(none)
+  cursor: pointer
+  text-decoration: none !important
+  color: $link-color
+
+  &:visited
+    color: $link-color
+
+  &:hover
+    color: $link-color-hover
+
+  &:active
+    color: $link-color-active
+
+ul, ol
+  @extend %default-margin
+
+.inline-list
+  padding: 0
+
+  > li
+    display: inline-block
+    margin-right: rhythm(0.5)
+
+.uppercase
+  text-transform: uppercase
+  letter-spacing: 1px
+
+table
+  @extend %default-margin
+  width: 100%
+
+th
+  text-align: left

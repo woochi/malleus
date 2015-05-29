@@ -1,0 +1,24 @@
+.skill-list
+  list-style: none
+  padding: 0
+
+.skill
+  margin: rhythm(0.25)
+  padding: rhythm(0.5) rhythm(1)
+  background: rgba($white, 0.5)
+
+@media #{$medium-up}
+
+  .skill-list
+    +display(flex)
+    +flex-wrap(wrap)
+    +align-content(center)
+    +justify-content(center)
+
+  .skill
+    +flex(0 1 40%)
+
+@media #{$large-up}
+
+  .skill
+    +flex(0 1 30%)

@@ -1,0 +1,28 @@
+.btn-group
+  padding: 0
+  list-style: none
+  white-space: nowrap
+
+  > li
+    display: inline-block
+
+  > li:first-child:not(:last-child) .btn
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+
+  > li:last-child:not(:first-child) .btn
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+
+  > li:not(:last-child):not(:first-child) .btn
+    border-radius: 0
+
+  > li:not(:first-child) .btn
+    margin-left: -$btn-border-width
+
+
+.btn-group-current
+
+  .btn
+    background: $gold5
+    color: $body-background

@@ -1,0 +1,31 @@
+$dropdown-width: rhythm(10)
+$dropdown-background: $navy5
+
+.dropdown
+  position: relative
+  display: inline-block
+
+.dropdown-actions
+  display: none
+  position: absolute
+  z-index: $zindex-dropdown
+  width: $dropdown-width
+  background: $dropdown-background
+  margin: 0
+  padding: rhythm(0.25) 0
+  list-style: none
+  border-radius: $global-radius
+
+  .dropdown-open &
+    display: block
+
+  > li > a
+    display: block
+    padding: rhythm(0.25) rhythm(1)
+
+  .dropdown-left
+
+  .dropdown-right
+
+  .dropdown-center &
+    left: $dropdown-width * -0.5

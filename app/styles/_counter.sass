@@ -1,0 +1,13 @@
+.wound-counter
+  display: inline-block
+
+.wound-counter-down
+  +font-size(12px)
+
+.wound-counter-up
+  @extend .counter-down
+
+.wound-counter-max
+
+  &:before
+    content: " / "

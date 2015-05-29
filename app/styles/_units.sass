@@ -1,0 +1,71 @@
+$unit-shadow: 0 6px 10px rgba($black, 0.2)
+
+.unit-list
+  margin: rhythm(1)
+  padding: rhythm(1, $offset: 2px)
+  border: 2px dashed $gold5
+  border-radius: $global-radius
+  min-height: rhythm(6)
+  width: rhythm(12)
+
+.unit
+  position: relative
+  cursor: pointer
+  +user-select(none)
+  transition: all 0.5s $ease-out-expo
+  list-style-type: none
+  margin: rhythm(0.25) 0
+  padding: rhythm(0.5)
+  background: rgba($black, 0.2)
+  border-radius: rhythm(1)
+  width: 100%
+
+  &:hover
+    box-shadow: 0 0 5px
+
+  &.current
+    transform: scale(1.05, 1.05)
+    background-color: $gold5
+    color: $body-background
+
+  &.selected
+    box-shadow: 0 0 5px
+
+.unit-list-empty
+  text-align: center
+
+.unit-state
+  transition: border-color 0.5s $ease-out-expo
+  float: left
+  width: rhythm(0.8)
+  height: rhythm(0.8)
+  margin: rhythm(0.1)
+  border-radius: 50%
+  margin-right: rhythm(0.5)
+  border: 2px solid $gold5
+
+  .current &
+    border-color: $body-background
+
+  .unit-safe &
+    background: $green5
+
+  .unit-wounded &
+    background: $yellow5
+
+  .unit-danger &
+    background: $red5
+
+  .unit-dead &
+    background: $black
+
+.unit-destroy
+  position: absolute
+  right: rhythm(1)
+
+.unit-dropdown
+  position: absolute
+  right: rhythm(1)
+
+.unit-wound-counter
+  @extend .unit-dropdown

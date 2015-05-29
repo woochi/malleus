@@ -1,0 +1,57 @@
+$selector-bullet-size: 8px
+$selector-bullets-padding: $selector-bullet-size
+
+.selector
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+
+.selector-fader
+  height: 100%
+  width: 100%
+  padding: rhythm(1) 0
+
+  &.fade-enter
+    position: absolute
+    top: 0
+    left: 0
+
+.selector-content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+
+.selector-bullets
+  display: none
+  flex: 0 0 auto
+  width: $selector-bullets-padding * 2 + $selector-bullet-size
+  padding: $selector-bullets-padding
+  margin: rhythm(1)
+  background: rgba($black, 0.2)
+  border-radius: ($selector-bullet-size + $selector-bullets-padding * 2) * 0.5
+
+.selector-bullet
+  list-style-type: none
+  margin: $selector-bullets-padding 0 0
+
+  &:first-child
+    margin-top: 0
+
+  > a
+    display: block
+    width: $selector-bullet-size
+    height: $selector-bullet-size
+    background: $gold5
+    border-radius: 50%
+
+.selector-content
+  position: relative
+  width: 100%
+
+@media #{$medium-up}
+
+  .selector-bullet
+    display: block
